@@ -1,9 +1,11 @@
 from aiogram.utils.helper import Helper, HelperMode, ListItem
 
 
-class PreprocessingState(Helper):
+class PreprocessingStates(Helper):
     mode = HelperMode.snake_case
 
-    links_input = ListItem()
-    position_choice = ListItem()
-    grabbing = ListItem()
+    START = ListItem()
+    LINKS_INPUT = ListItem()
+    POSITION_CHOICE = ListItem()
+    GRABBING = ListItem()
+
